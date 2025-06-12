@@ -1,0 +1,14 @@
+---
+import Slide from './Slide.astro';
+---
+
+<div class="container  p-20 py-20 flex flex-col items-center">
+    <h1 class="text-5xl font-bold text-primary text-center mb-4">Graficas</h1>
+    <p class="text-gray-300 text-center mb-8">Desliza para ver todas las graficas</p>
+
+   <div class="carousel w-full">
+    <Slide slide="img-1" slideA="#img-3" slideNext="#img-2" img="/melissa_grafica.png" />
+    <Slide slide="img-2" slideA="#img-1" slideNext="#img-3" img="/guadalupe_grafica.png" />
+    <Slide slide="img-3" slideA="#img-2" slideNext="#img-1" img="/nicole_grafica.png" />
+  </div>
+</div>
